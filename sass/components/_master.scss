@@ -1,0 +1,14 @@
+body {
+    font-family: $main-font-family;
+    margin: 0;
+    border: 0;
+    color: $main-text-color;
+    max-width: 1000px;
+    min-width: 300px;
+    scroll-behavior: smooth;
+    width: 100%;
+    
+}
+.hidden {
+    display: none;
+}

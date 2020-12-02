@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about the mini cooper!</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- <div class="splash">
+        <h1 class="fade-in">Discover the newest MINI models!</h1>
+    </div> -->
+
+    <div class="nav-position">
+        <div class="main-nav-con scroll-menu">
+            <a href="#" class="logo"><img src="images/mini_logo1.png" alt="logo" ></a>
+            <div class="hamburger-nav-con">
+                <a class ="c-hamburger c-hamburger--htx hamburger hamburger-scroll-menu"><span></span></a>
+                <nav class="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="#">Models</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Owners</a></li>
+                        <li><a href="#">Pre-owned</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div><!--Close nav position-->
+    <div class="textCon">
+        <p>Click on the car to see more detail!</p>
+    </div>
+    <main id="app">
+    <div class="car-info">
+    <ul>
+        <car-card @showmydata="showCarData" v-for="car in carmodel" :car="car" :key="car.id"></car-card>
+    </ul>
+    </div>
+    <section class="bio-data" :class=" {'show-bio' : showBioData}">
+       <h2>{{currentCarData.name}}</h2>
+       <h3>{{currentCarData.price}}</h3>
+       <p>{{currentCarData.description}}</p>
+   </section>
+
+</main>
+<footer>
+    <p>© 2020.All Right Reserved. </p>
+</footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/main_nav.js" type="module"></script>
+   
+</body>
+</html>
