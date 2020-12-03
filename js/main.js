@@ -3,13 +3,13 @@ import carCard from "./components/carCard.js";
 (() => {
 
 //making splash page
-// let splash = document.querySelector('.splash');
+let splash = document.querySelector('.splash');
 
-// document.addEventListener('DOMContentLoaded', (e)=> {
-//     setTimeout(()=> {
-//         splash.classList.add('display-none');
-//     }, 3000);
-// });
+document.addEventListener('DOMContentLoaded', (e)=> {
+    setTimeout(()=> {
+        splash.classList.add('display-none');
+    }, 2000);
+});
 
 let vue_vm = new Vue({
         data: {
@@ -27,6 +27,7 @@ let vue_vm = new Vue({
             .then(data => { 
                     
                 data.forEach(car =>this.carmodel.push(car));
+                this.currentCarData = data[1];
                 
             })
                 .catch(err => console.error(err));
