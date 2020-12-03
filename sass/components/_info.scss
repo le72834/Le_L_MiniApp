@@ -3,8 +3,8 @@
 }
 .show-bio {
    display: block !important;
-    transition: 0.3s ease-in-out;
-    
+    transition: all 0.3s ease-in-out;
+    animation: fadeInLeft 0.5s 0.5s;
 
     
    h2 {
