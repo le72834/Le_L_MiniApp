@@ -10,9 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <!-- <div class="splash">
+    <div class="splash">
         <h1 class="fade-in">Discover the newest MINI models!</h1>
-    </div> -->
+    </div>
 
     <div class="nav-position">
         <div class="main-nav-con scroll-menu">
@@ -47,7 +47,13 @@
        <h3>{{currentCarData.price}}</h3>
        <p>{{currentCarData.description}}</p>
    </section>
+   <div class="videoCon">
+       <ul>
+       <video autoplay :src="'videos/' + currentCarData.video" ></video>
 
+        </ul>
+        
+   </div>
 </main>
 <footer>
     <p>© 2020.All Right Reserved. </p>

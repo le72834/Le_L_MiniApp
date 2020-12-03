@@ -4,8 +4,8 @@
 .show-bio {
    display: block !important;
     transition: 0.3s ease-in-out;
-    position: absolute;
-    z-index: 1;
+    
+
     
    h2 {
        text-transform: uppercase;
@@ -51,6 +51,15 @@
         width: 90%;
         margin: 20px 0;
     }
+    .videoCon {
+       
+       margin-top: 20px;
+       margin-left: 20px;
+       video {
+           width: 370px;
+       }
+       
+    }
 }
 .textCon {
     padding-top: 150px;
@@ -63,10 +72,11 @@ footer {
     background-color: black;
     color: #fff;
     padding: 20px;
-    margin-top: 270px;
+    margin-top: 80px;
     text-align: center;
     width: 100%;
 }
+
 
 @media screen and (min-width: 700px) {
     #app {
@@ -78,13 +88,21 @@ footer {
         margin-left: 50px;
         margin-right: 50px;
     }
+    .videoCon {
+        text-align: center;
+        video {
+            width: 700px;
+            margin-bottom: 30px;
+        }
+       
+    }
 }
 @media screen and (min-width: 1024px) {
     #app {
        
         .car-info  {
-            margin-left: 0px;
-            padding-left: 10px;
+            margin-left: 0px;;
+            
             width: 1000px;
             ul {
                 display: flex;
@@ -98,6 +116,16 @@ footer {
         img {
             width: 100%;
             padding-right: 70px;
+        }
+    }
+    
+    
+    .videoCon {
+       
+        video {
+        margin-top: auto;
+        width: 800px;
+        
         }
     }
 }
